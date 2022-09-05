@@ -1,10 +1,10 @@
-import Card from './component/Card/Card';
+import Home from "./view/Home";
 
 function App() {
  
   return (
     <div className="container">
-      <Card/>
+      <Home/>
     </div>
   );
 }
