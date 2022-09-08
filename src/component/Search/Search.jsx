@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Search() {
-    // hacer que encuentre las cartas por nombre
-  return (
-    <div>
-        <input type="text" placeholder="Buscar carta" />
-    </div>
+function Search({handleSearch, search}) {
+    return (
+        <div>
+            <input type="text" placeholder="Buscar carta" onChange={(e)=>handleSearch(e.target.value)} value={search}/>
+        </div>
     )
 }
 
